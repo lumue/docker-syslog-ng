@@ -14,5 +14,7 @@ ADD syslog-ng.conf /opt/syslog-ng/syslog-ng.conf
 
 VOLUME ["/opt/syslog-ng", "/logs"]
 
+EXPOSE 514/tcp 514/udp
+
 ENTRYPOINT ["syslog-ng"]
 CMD ["-F","--no-caps"]
