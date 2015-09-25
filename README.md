@@ -4,7 +4,7 @@ docker build for a syslog-ng host.
 ## what does it do?
  * listens on default syslog-ng port (514)  
  * write to path /logs which is exposed as volume /logs  
- * (default behaviour)[syslog-ng.conf] can be changed by mapping a host path containing a custom syslog-ng.conf to exposed volume /conf  
+ * [default behaviour](syslog-ng.conf) can be changed by mapping a host path containing a custom syslog-ng.conf to exposed volume /conf  
 
 ## ports
 514/udp
