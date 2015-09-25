@@ -6,10 +6,10 @@ docker build for a syslog-ng host.
  * write to path /logs which is exposed as volume /logs  
  * default behaviour defined in [/conf/syslog-ng.conf](syslog-ng.conf) can be changed by mapping a host path containing a custom syslog-ng.conf to exposed volume /conf  
 
-## ports
-514/udp
-514/tcp
+## exposed ports
+ * 514/udp
+ * 514/tcp
 
-## volumes
-`/conf` contains syslog-ng.conf
-`/logs` log destination
+## exposed volumes
+ * `/conf` contains syslog-ng.conf
+ * `/logs` log destination
